@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: transparent;
+    background: #aea278;
 }
 
 a {
@@ -60,7 +60,7 @@ MIDDLE HEADER
     position: absolute;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
     object-fit: cover;
 }
 

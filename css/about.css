@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    background: #aea278;
 }
 
 .Header-Middle {
@@ -76,7 +77,8 @@ JLOPEZ SECTION
     height: 100%;
 }
 
-.Jlopez-Section__Texts, .Jlopez__Photo {
+.Jlopez-Section__Texts,
+.Jlopez__Photo {
     width: 50%;
 }
 
@@ -240,4 +242,233 @@ JLOPEZ SECTION
     position: absolute;
     top: calc(100% / 3);
     right: 25px;
+}
+
+.Titles-Transparent-Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Titles-Transparent-Content h2 {
+    font-size: 75px;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    /* Aplicar un fondo transparente detrás del texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Para compatibilidad con algunos navegadores */
+    color: transparent;
+
+    /* Establecer el color de fondo de la sección para que se muestre detrás del texto */
+    background-image: url('./img/about/Foto 1.webp'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
+    background-position: center; /* Ajustar la posición de la imagen de fondo */
+    padding: 10px;
+    text-fill-color: transparent;
+}
+
+.Titles-Transparent-Content h2:nth-child(4) {
+    position: absolute;
+    top: calc(100% / 2.4);
+    right: 12.5%;
+}
+
+.Titles-Transparent-Content span {
+    font-size: 150px;
+    font-weight: 600;
+    color: white;
+}
+
+/*
+ARMONIZACION OROFACIAL
+*/
+
+.Arm-Facelift {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #aea278;
+}
+
+.Arm-Facelift__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.Arm-Facelift__Container span {
+    color: white;
+}
+
+
+.Arm-Facelift__Container h2 {
+    font-size: 75px;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    /* Aplicar un fondo transparente detrás del texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Para compatibilidad con algunos navegadores */
+    color: transparent;
+    padding: 0;
+    margin: 0;
+
+    /* Establecer el color de fondo de la sección para que se muestre detrás del texto */
+    background-image: url('./img/about/Foto 1.webp'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
+    background-position: center; /* Ajustar la posición de la imagen de fondo */
+    text-fill-color: transparent;
+}
+
+.Lists-Arm-Facelift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.Lists-Arm-Facelift ul {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 0;
+}
+
+.Lists-Arm-Facelift ul li {
+    color: rgb(49, 49, 49);
+    list-style: outside;
+}
+
+.Arm-Facelift::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: rgb(236, 236, 236);
+    height: 100%;
+    z-index: 5;
+}
+
+.Arm-Facelift::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: rgb(236, 236, 236);
+    height: 100%;
+    z-index: 5;
+}
+
+/*
+ODONTOLOGIA SECTION
+*/
+
+.Odontologia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #aea278;
+}
+
+.Odontologia__Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Odontologia__Container img {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    z-index: 10000;
+}
+
+.Odontologia__Container__Text {
+    height: 50%;
+    position: relative;
+    position: absolute;
+    right: calc(100% / 5);
+}
+
+.Odontologia__Container__Text h2 {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: -84px;
+    right: -150px;
+    z-index: 1;
+}
+
+.Odontologia__Container__Text h2:nth-child(2) {
+    content: "";
+    position: absolute;
+    top: 0;
+    font-size: 100px;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 11000;
+}
+
+.Odontologia__Container__Text ul {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    right: 65px;
+}
+
+.Odontologia__Container__Text ul li {
+    list-style: outside;
+}
+
+.Odontologia::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: rgb(236, 236, 236);
+    height: 100%;
+    z-index: 5;
+}
+
+.Odontologia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: rgb(236, 236, 236);
+    height: 100%;
+    z-index: 12000;
 }
