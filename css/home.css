@@ -265,6 +265,10 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     height: 90%;
 }
 
+.Fixed-Banner__Container p {
+    font-size: 25px;
+}
+
 .Fixed-Banner__Container a {
     display: flex;
     justify-content: center;
@@ -275,4 +279,573 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     color: white;
 }
 
+
+/*
+SMILE SECTION
+*/
+
+.Smile-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/home/fondo\ 3.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+
+.Smile-Section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+}
+
+.Smile-Section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+} 
+
+.Smile-Section__Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 96%;
+    height: 100%;
+}
+
+.Smile-Content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.Smile-Content-text h2 {
+    font-size: 100px;
+    color: white;
+}
+
+.Image-Content-img {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.Image-Content-img img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.Smile-Content-text__ContainerA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Smile-Content-text .Smile-Content-text__ContainerA a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 auto;
+    width: 150px;
+    height: 30px;
+    color: white;
+    background: rgb(71, 71, 71);
+}
+
+/*
+TEAM JLOPEZ SECTION
+*/
+
+.Team-Jlo {
+    width: 100%;
+    height: 100vh;
+    background: #aea278;
+}
+
+.Team-Jlo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+}
+
+.Team-Jlo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+} 
+
+.Team-Jlo__Container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Content-Team-Jlo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    gap: 10px;
+}
+
+.Content-Team-Jlo__Item-img {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    position: relative;
+}
+
+.Content-Team-Jlo__Item-img img {
+    width: 98%;
+}
+
+.Content-Team-Jlo__Item-img img:nth-child(2) {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 100%;
+    height: 105%;
+}
+
+.Content-Team-Jlo-text {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+.Content-Team-Jlo-text h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.Content-Team-Jlo-text p {
+    width: 80%;
+}
+
+.Content-Team-Jlo-text__A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Content-Team-Jlo-text__A a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    background: rgb(71, 71, 71);
+}
+
+/*
+JESSICA LOPEZ ARMONIZACION Y ESTETICA SECTION
+*/
+
+.Jlopez-Arm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #aea278;
+    position: relative;
+    overflow: hidden;
+}
+
+.Jlopez-Arm__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Jlopez-Arm__Container__Item {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Jlopez-Arm__Container__Item img {
+    width: 65%;
+    position: absolute;
+    right: 150px;
+    bottom: -126px;
+}
+
+.Jlopez-Arm__Container__Text {
+    width: 30%;
+    position: absolute;
+    right: 180px;
+    padding-top: 70px;
+}
+
+.Content-Jlopez-Arm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Content-Jlopez-Arm a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    background: rgb(71, 71, 71);
+}
+
+.Jlopez-Arm::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+}
+
+.Jlopez-Arm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+} 
+
+
+/*
+TECH SECTION
+*/
+
+.Tech-Section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/home/fondo\ 5.webp');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.Tech-Section__Container {
+    position: relative;
+}
+
+.Tech-Section__Container__Text {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    color: white;
+}
+
+.Tech-Section__Container__Text h2 {
+    font-size: 100px;
+}
+
+.Tech-Section__Container__Text p {
+    width: 70%;
+    text-align: justify;
+}
+
+.Tech-Section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+}
+
+.Tech-Section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+} 
+
+
+/*
+CURING LIGHT SECTION
+*/
+
+.Curring-light {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/home/fondo\ 6.webp');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.Curring-light__Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Curring-light__Container__Text {
+    position: absolute;
+    left: 70px;
+    top: calc(100% / 3);
+    width: 50%;
+}
+
+.Curring-light__Container__Text h2 {
+    font-size: 75px;
+}
+
+.Curring-light__Container__Text p {
+    width: 65%;
+}
+
+.Curring-light__Container__Images {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 50%;
+}
+
+.Curring-light__Container__Images img {
+    width: 90%;
+    position: absolute;
+}
+
+.Curring-light__Container__Images img:nth-child(1) {
+    z-index: 10;
+}
+
+.Curring-light__Container__Images img:nth-child(2) {
+    width: 100%;
+    z-index: 5;
+    top: 180px;
+    right: 250px;
+}
+
+.Curring-light::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+}
+
+.Curring-light::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: rgb(71, 71, 71);
+    height: 100%;
+    z-index: 999;
+} 
+
+/*
+FORM AGENT SECTION
+*/
+
+.Contact-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-image: url('../img/home/fondo\ 6\ \(1\).webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+}
+
+.Contact-Section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: rgb(96, 95, 96);
+    height: 100%;
+    z-index: 999;
+}
+
+.Contact-Section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: rgb(96, 95, 96);
+    height: 100%;
+    z-index: 999;
+}
+
+.Contact-Section__Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 95%;
+}
+
+.Form-Content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 15px;
+}
+
+.Form-Content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Form-Content h2 {
+    font-size: 55px;
+}
+
+.Form-Content form input, .Form-Content form textarea {
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+}
+
+.Form-Content form input::placeholder, .Form-Content form textarea::placeholder {
+    font-size: 15px;
+}
+
+.Form-Content form input {
+    height: 35px;
+}
+
+.Form-Content form button {
+    width: 220px;
+    height: 35px;
+    background: rgb(71, 71, 71);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+.Map-Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.Map-Content__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Map {
+    width: 80%;
+    height: 450px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out .2s;
+}
+
+.Map img:hover {
+    width: 110%;
+    height: 110%;
+}
+
+.Texts-Direction-Data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.Texts-Direction-Data p {
+    padding: 0;
+    margin: 0;
+}
+
+.Line-into-form {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 2px;
+    background: rgb(71, 71, 71);
+}
 
