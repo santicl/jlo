@@ -588,11 +588,13 @@ TECH SECTION
 
 .Tech-Section__Container__Text h2 {
     font-size: 100px;
+    color: rgb(71, 71, 71);
 }
 
 .Tech-Section__Container__Text p {
     width: 70%;
     text-align: justify;
+    color: rgb(118, 118, 118);
 }
 
 .Tech-Section::after {
