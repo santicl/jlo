@@ -15,6 +15,32 @@ header {
     z-index: 1;
 }
 
+.Section-Proof, .Section-Proof__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #DAC9BC;
+}
+
+.Section-Proof__Container h1 {
+    font-size: 75px;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    /* Aplicar un fondo transparente detrás del texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Para compatibilidad con algunos navegadores */
+    color: transparent;
+
+    /* Establecer el color de fondo de la sección para que se muestre detrás del texto */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
+    background-position: center; /* Ajustar la posición de la imagen de fondo */
+    padding: 10px;
+    text-fill-color: transparent;
+}
+
 a {
     text-decoration: none;
     color: white;
