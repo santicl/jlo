@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: #aea278;
+    background: #DAC9BC;
 }
 
 .Header-Middle {
@@ -64,7 +64,7 @@ JLOPEZ SECTION
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #aea278;
+    background: #8A7865;
     overflow: hidden;
     color: white;
 }
@@ -296,7 +296,7 @@ ARMONIZACION OROFACIAL
     width: 100%;
     height: 100vh;
     position: relative;
-    background: #aea278;
+    background: #DAC9BC;
 }
 
 .Arm-Facelift__Container {
@@ -620,4 +620,10 @@ CONTACT FORM SECTION
     width: 100%;
     height: 2px;
     background: rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 550px) {
+    .Content-Link {
+        visibility: hidden;
+    }
 }

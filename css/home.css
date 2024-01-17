@@ -6,7 +6,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: #aea278;
+    background: #DAC9BC;
 }
 /*
 HOME HEADER MAIN
@@ -30,7 +30,7 @@ HOME HEADER MAIN
     position: absolute;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
 }
@@ -143,7 +143,8 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #aea278;
+    background: rgb(217,200,187);
+    background: linear-gradient(90deg, rgba(217,200,187,1) 0%, rgba(210,196,184,1) 48%, rgba(160,142,125,1) 84%);
     overflow: hidden;
     color: white;
 }
@@ -251,7 +252,7 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     justify-content: center;
     align-items: center;
     position: absolute;
-    background: rgba(153, 151, 148, 0.5);
+    background: #B1ADA2;
     top: 0;
     width: 100%;
     height: 90px;
@@ -379,7 +380,7 @@ TEAM JLOPEZ SECTION
 .Team-Jlo {
     width: 100%;
     height: 100vh;
-    background: #aea278;
+    background: #DAC9BC;
 }
 
 .Team-Jlo::after {
@@ -486,7 +487,7 @@ JESSICA LOPEZ ARMONIZACION Y ESTETICA SECTION
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: #aea278;
+    background: #DAC9BC;
     position: relative;
     overflow: hidden;
 }
@@ -849,4 +850,10 @@ FORM AGENT SECTION
     width: 100%;
     height: 2px;
     background: rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 550px) {
+    .Content-Link {
+        visibility: hidden;
+    }
 }
