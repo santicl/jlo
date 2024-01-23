@@ -87,10 +87,6 @@ HAMBURGUER SECTION
         transform: scale(0);
     }
 
-    .Nav-Container {
-        width: 97%;
-    }
-
     .Nav-Container ul {
         display: none;
         transition: all ease-in-out 0.5s;
@@ -115,5 +111,9 @@ HAMBURGUER SECTION
         font-size: 25px;
         font-weight: 600;
         color: rgb(84, 67, 67);
+    }
+
+    .Nav-Container {
+        width: 95%;
     }
 }
