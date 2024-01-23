@@ -21,7 +21,7 @@ li {
 AFTER AND BEEFORE MAIN CONTENT TO LINE IN DIFERENT SPACING INTO PAGE
 */
 
-main::after {
+.Middle-Header::after {
     content: "";
     position: absolute;
     top: 0;
@@ -32,7 +32,7 @@ main::after {
     z-index: 999;
 }
 
-main::before {
+.Middle-Header::before {
     content: "";
     position: absolute;
     top: 0;
@@ -72,6 +72,7 @@ MIDDLE HEADER
     width: 100%;
     padding-left: 50px;
     color: white;
+    z-index: 999;
 }
 
 .Middle-Header__Container h1 {
@@ -280,5 +281,65 @@ CONTACT SECTION
 @media screen and (max-width: 550px) {
     .Content-Link {
         visibility: hidden;
+    }
+
+    .Middle-Header__Container h1 {
+        width: 65%;
+        font-size: 38px;
+    }
+
+    .Middle-Header__Container span {
+        width: 65%;
+    }
+
+    .Middle-Header__Container p {
+        width: 75%;
+    }
+
+    .Contact-Section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        background: #D4C3B6;
+        color: white;
+        height: auto;
+    }
+
+    .Contact-Section__Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+        width: 95%;
+        height: 100%;
+    }
+
+    .Form-Content {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 84%;
+        padding-left: 0;
+    }
+
+    .Map-Content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Map-Content__Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 50px;
     }
 }

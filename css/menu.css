@@ -1,0 +1,119 @@
+/*
+HAMBURGUER SECTION
+*/
+
+.Hamburguer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background: #DAC9BC;
+    transition: all ease-in-out .2s;
+}
+
+.Curtain-Menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #DAC9BC;
+    border-radius: 50% 0 50% 0;
+    transform-origin: top right;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.Curtain-Menu.open {
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.Hamburguer:hover {
+    background: rgb(218, 201, 188, .5);
+    gap: 7px;
+}
+
+.Hamburguer:hover span {
+    background: #DAC9BC;
+}
+
+.Hamburguer span {
+    width: 60%;
+    height: 3px;
+    background: rgb(109, 86, 86);
+    border-radius: 2px;
+    transition: all ease-in-out 0.5s;
+}
+
+.Hamburguer.showX {
+    z-index: 10000;
+    gap: 0;
+}
+
+.Hamburguer.showX:hover span {
+    background: rgb(84, 67, 67);
+}
+
+.Hamburguer.showX span:nth-child(2) {
+    transform: scaleX(0);
+    display: none;
+}
+
+.Hamburguer.showX span:nth-child(1) {
+    transform: rotate(45deg) translate(0.5px, 0.5px);
+    width: 70%;
+}
+
+.Hamburguer.showX span:nth-child(3) {
+    transform: rotate(-45deg) translate(0.5px, -0.5px);
+    width: 70%;
+}
+
+@media screen and (max-width: 550px) {
+    .Hamburguer {
+        display: flex;
+    }
+
+    .Content-Link {
+        visibility: hidden;
+        transform: scale(0);
+    }
+
+    .Nav-Container {
+        width: 97%;
+    }
+
+    .Nav-Container ul {
+        display: none;
+        transition: all ease-in-out 0.5s;
+    }
+
+    .Nav-Container ul.open {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: scale(1);
+        padding: 0;
+        z-index: 999;
+    }
+
+    .Nav-Container ul.open li a {
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(84, 67, 67);
+    }
+}

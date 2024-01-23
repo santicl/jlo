@@ -4,6 +4,32 @@ body {
     background: #DAC9BC;
 }
 
+/*
+AFTER AND BEEFORE MAIN CONTENT TO LINE IN DIFERENT SPACING INTO PAGE
+*/
+
+.Header-Middle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: rgb(236, 236, 236);
+    height: 100%;
+    z-index: 999;
+}
+
+.Header-Middle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: rgb(236, 236, 236);
+    height: 100%;
+    z-index: 999;
+}
+
 .Header-Middle {
     display: flex;
     justify-content: center;
@@ -626,4 +652,211 @@ CONTACT FORM SECTION
     .Content-Link {
         visibility: hidden;
     }
+
+    .Header-Middle img {
+        height: 100%;
+    }
+
+    .Header-Middle__Texts {
+        width: 61%;
+    }
+
+    .Jlopez-Section {
+        height: auto;
+    }
+
+    .Titles-Transparent-Content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .Titles-Transparent-Content h2 {
+        font-size: 46px;
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        padding: 0;
+        margin: 0;
+        text-fill-color: transparent;
+    }
+
+    .Titles-Transparent-Content h2:nth-child(4) {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .Titles-Transparent-Content span {
+        font-size: 87px;
+    }
+
+    .Arm-Facelift {
+        height: auto;
+    }
+
+    .Arm-Facelift__Container h2 {
+        font-size: 31px;
+    }
+
+    .Lists-Arm-Facelift {
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        width: 71%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .Lists-Arm-Facelift ul li {
+        font-size: 13px;
+    }
+
+    .Lists-Arm-Facelift ul {
+        margin: 0;
+    }
+
+
+    .Contact-Section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        background-image: url(../img/home/fondo\ 6\ \(1\).webp);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        height: auto;
+    }
+
+    .Contact-Section__Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        gap: 25px;
+        width: 95%;
+    }
+
+    .Form-Content {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 85%;
+        padding-left: 0px;
+    }
+
+    .Map-Content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .Map {
+        width: 88%;
+        height: 262px;
+        border: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .Jlopez-Section__Container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Jlopez-Section__Texts {
+        width: 95%;
+        padding-top: 50px;
+    }
+
+    .Jlopez-Section__Texts__Title h2 {
+        font-size: 59px;
+    }
+
+    .Jlopez-Section__Texts__Title h2:nth-child(2) {
+        padding-left: 156px;
+    }
+
+    .Jlopez__Photo {
+        width: 100%;
+        height: 450px;
+    }
+
+    .Jlopez__Photo img:nth-child(1) {
+        position: relative;
+        right: 0;
+    }
+
+    .Jlopez__Photo img:nth-child(2) {
+        right: calc(100% / 5);
+        top: auto;
+        bottom: 0 !important;
+    }
+    .Odontologia__Container img {
+        position: relative;
+        left: 0;
+        width: 92%;
+        z-index: 10000;
+    }
+
+    .Odontologia__Container {
+        align-items: baseline;
+    }
+
+    .Odontologia__Container__Text {
+        top: calc(100% / 2);
+        height: 50%;
+        position: relative;
+        position: absolute;
+        right: calc(100% / 2);
+    }
+
+    .Odontologia__Container__Text h2 {
+        color: white;
+        font-size: 60px;
+        position: absolute;
+        top: -146px;
+        right: -150px;
+        z-index: 1;
+    }
+
+    .Odontologia__Container__Text h2:nth-child(2) {
+        content: "";
+        position: absolute;
+        top: -97px;
+        font-size: 60px;
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        z-index: 11000;
+    }
+
+    .Odontologia__Container__Text ul {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 8px;
+        position: absolute;
+        right: 0;
+    }
 }
+

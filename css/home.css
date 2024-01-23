@@ -7,7 +7,28 @@ body {
     padding: 0;
     margin: 0;
     background: #DAC9BC;
+    transition: all ease-in-out .5s;
 }
+
+body::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #DAC9BC;
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+    border: 1px solid #DAC9BC;
+    /* creates padding around scroll thumb */
+}
+
 /*
 HOME HEADER MAIN
 */
@@ -143,8 +164,8 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     position: relative;
     width: 100%;
     height: 100vh;
-    background: rgb(217,200,187);
-    background: linear-gradient(90deg, rgba(217,200,187,1) 0%, rgba(210,196,184,1) 48%, rgba(160,142,125,1) 84%);
+    background: rgb(217, 200, 187);
+    background: linear-gradient(90deg, rgba(217, 200, 187, 1) 0%, rgba(210, 196, 184, 1) 48%, rgba(160, 142, 125, 1) 84%);
     overflow: hidden;
     color: white;
 }
@@ -157,7 +178,8 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     height: 100%;
 }
 
-.Jlopez-Section__Texts, .Jlopez__Photo {
+.Jlopez-Section__Texts,
+.Jlopez__Photo {
     width: 50%;
 }
 
@@ -317,7 +339,7 @@ SMILE SECTION
     background: rgb(71, 71, 71);
     height: 100%;
     z-index: 999;
-} 
+}
 
 .Smile-Section__Container {
     display: flex;
@@ -403,7 +425,7 @@ TEAM JLOPEZ SECTION
     background: rgb(71, 71, 71);
     height: 100%;
     z-index: 999;
-} 
+}
 
 .Team-Jlo__Container {
     display: flex;
@@ -511,16 +533,54 @@ JESSICA LOPEZ ARMONIZACION Y ESTETICA SECTION
 }
 
 .Jlopez-Arm__Container__Item img {
-    width: 65%;
+    height: 100%;
+    right: calc(100% / 2.5);
+    bottom: 0;
     position: absolute;
-    right: 150px;
-    bottom: -126px;
 }
+
+.Content-Title-Letter {
+    position: absolute;
+    top: 50px;
+    left: calc(100% / 2);
+}
+
+.Content-Title-Letter h2 {
+    font-size: 75px;
+    position: relative;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    /* Aplicar un fondo transparente detrás del texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Para compatibilidad con algunos navegadores */
+    color: transparent;
+
+    /* Establecer el color de fondo de la sección para que se muestre detrás del texto */
+    background-size: cover;
+    /* Ajustar el tamaño de la imagen de fondo */
+    background-position: center;
+    /* Ajustar la posición de la imagen de fondo */
+    padding: 0;
+    margin: 0;
+    text-fill-color: transparent;
+    z-index: 10000;
+}
+
+.Content-Title-Letter h2:nth-child(2) {
+    color: white;
+    font-size: 75px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
 
 .Jlopez-Arm__Container__Text {
     width: 30%;
     position: absolute;
-    right: 180px;
+    right: 150px;
     padding-top: 70px;
 }
 
@@ -560,7 +620,7 @@ JESSICA LOPEZ ARMONIZACION Y ESTETICA SECTION
     background: rgb(71, 71, 71);
     height: 100%;
     z-index: 999;
-} 
+}
 
 
 /*
@@ -618,7 +678,7 @@ TECH SECTION
     background: rgb(71, 71, 71);
     height: 100%;
     z-index: 999;
-} 
+}
 
 
 /*
@@ -626,6 +686,9 @@ CURING LIGHT SECTION
 */
 
 .Curring-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-image: url('../img/home/fondo\ 6.webp');
@@ -639,14 +702,13 @@ CURING LIGHT SECTION
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 95%;
     height: 100%;
 }
 
 .Curring-light__Container__Text {
-    position: absolute;
-    left: 70px;
-    top: calc(100% / 3);
     width: 50%;
 }
 
@@ -658,27 +720,27 @@ CURING LIGHT SECTION
     width: 65%;
 }
 
-.Curring-light__Container__Images {
-    position: absolute;
-    top: 0;
-    right: 30px;
-    width: 50%;
-}
 
-.Curring-light__Container__Images img {
-    width: 90%;
-    position: absolute;
+.Curring-light__Container__Images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60%;
 }
 
 .Curring-light__Container__Images img:nth-child(1) {
+    position: relative;
+    width: 70%;
     z-index: 10;
+    left: 0;
 }
 
 .Curring-light__Container__Images img:nth-child(2) {
-    width: 100%;
+    position: absolute;
+    width: 70%;
+    top: 120px;
     z-index: 5;
-    top: 180px;
-    right: 250px;
 }
 
 .Curring-light::after {
@@ -701,7 +763,7 @@ CURING LIGHT SECTION
     background: rgb(71, 71, 71);
     height: 100%;
     z-index: 999;
-} 
+}
 
 /*
 FORM AGENT SECTION
@@ -772,13 +834,15 @@ FORM AGENT SECTION
     font-size: 55px;
 }
 
-.Form-Content form input, .Form-Content form textarea {
+.Form-Content form input,
+.Form-Content form textarea {
     width: 100%;
     border: none;
     padding-left: 10px;
 }
 
-.Form-Content form input::placeholder, .Form-Content form textarea::placeholder {
+.Form-Content form input::placeholder,
+.Form-Content form textarea::placeholder {
     font-size: 15px;
 }
 
@@ -853,7 +917,254 @@ FORM AGENT SECTION
 }
 
 @media screen and (max-width: 550px) {
-    .Content-Link {
-        visibility: hidden;
+    
+    .Middle-Header__Container {
+        padding-left: 33px;
+    }
+
+    .Middle-Header__Container h1 {
+        font-size: 51px;
+        width: 100%;
+    }
+
+    .Middle-Header__Container p {
+        width: 80%;
+    }
+
+    .Fixed-Banner__Container {
+        width: 84%;
+    }
+
+    .Jlopez-Section__Texts {
+        padding-bottom: 50px;
+    }
+
+    .Jlopez-Section__Texts__Title h2 {
+        font-size: 48px;
+    }
+
+    .Jlopez-Section__Texts__Title h2:nth-child(2) {
+        padding-left: 181px;
+    }
+
+    .Jlopez-Section__Container {
+        flex-direction: column-reverse;
+    }
+
+    .Jlopez-Section__Texts,
+    .Jlopez__Photo {
+        width: 90%;
+    }
+
+    .Jlopez-Section {
+        height: 175vh;
+    }
+
+    .Jlopez__Photo img:nth-child(1) {
+        width: 75%;
+    }
+
+    .Jlopez__Photo img:nth-child(2) {
+        width: 90%;
+    }
+
+    .Fixed-Banner {
+        height: 58px;
+    }
+
+    .Fixed-Banner__Container p {
+        font-size: 15px;
+    }
+
+    .Fixed-Banner__Container a {
+        width: 105px;
+    }
+
+    .Smile-Section__Container {
+        flex-direction: column-reverse;
+    }
+
+    .Smile-Section {
+        height: auto;
+    }
+
+    .Image-Content-img {
+        display: flex;
+        justify-content: end;
+        align-items: baseline;
+        position: relative;
+        width: 92%;
+        height: 100%;
+    }
+
+
+
+    .Image-Content-img img {
+        position: relative;
+        width: 68%;
+        height: 70%;
+    }
+
+    .Smile-Content-text h2 {
+        font-size: 59px;
+    }
+
+    .Smile-Content-text {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    .Team-Jlo {
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .Content-Team-Jlo {
+        flex-direction: column;
+    }
+
+    .Content-Team-Jlo__Item-img {
+        width: 100%;
+    }
+
+    .Team-Jlo__Container {
+        justify-content: center;
+    }
+
+    .Content-Team-Jlo__Item-img {
+        width: 96%;
+    }
+
+    .Content-Team-Jlo-text {
+        width: 95%;
+        text-align: center;
+    }
+
+    .Content-Team-Jlo-text p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .Content-Team-Jlo-text {
+        padding-bottom: 50px;
+    }
+
+    .Content-Team-Jlo-text h2 {
+        font-size: 45px;
+    }
+
+    .Tech-Section__Container__Text h2 {
+        font-size: 68px;
+        color: white;
+    }
+
+    .Tech-Section__Container__Text p {
+        color: white;
+    }
+    
+    .Curring-light {
+        height: auto;
+    }
+
+    .Curring-light__Container {
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    .Contact-Section__Container {
+        flex-direction: column;
+    }
+
+    .Contact-Section {
+        height: auto;
+    }
+
+    .Contact-Section__Container {
+        gap: 100px;
+    }
+
+
+
+    .Form-Content {
+        justify-content: center;
+        padding-left: 0;
+        width: 85%;
+        padding-top: 50px;
+    }
+
+    .Map-Content {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .Map {
+        width: 85%;
+    }
+
+    .Jlopez-Arm__Container__Item img {
+        right: 50%;
+    }
+
+    .Content-Title-Letter {
+        left: auto;
+    }
+
+    .Content-Title-Letter h2, .Content-Title-Letter h2:nth-child(2) {
+        font-size: 53px;
+    }
+
+    .Jlopez-Arm__Container__Text {
+        width: 84%;
+        right: auto;
+    }
+
+    .Curring-light__Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 95%;
+        height: 100%;
+    }
+    
+    .Curring-light__Container__Text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .Curring-light__Container__Text h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    .Curring-light__Container__Text p {
+        width: 95%;
+        text-align: center;
+    }
+    
+    
+    .Curring-light__Container__Images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .Curring-light__Container__Images img:nth-child(1) {
+        position: relative;
+        width: 70%;
+        z-index: 10;
+        left: 0;
+    }
+    
+    .Curring-light__Container__Images img:nth-child(2) {
+        position: absolute;
+        width: 70%;
+        top: 120px;
+        z-index: 5;
     }
 }

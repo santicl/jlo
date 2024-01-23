@@ -4,6 +4,25 @@ body {
     background: #DAC9BC;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #DAC9BC;
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+    border: 1px solid #DAC9BC;
+    /* creates padding around scroll thumb */
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -54,32 +73,6 @@ li {
     list-style: none;
 }
 
-/*
-AFTER AND BEEFORE MAIN CONTENT TO LINE IN DIFERENT SPACING INTO PAGE
-*/
-
-.Main::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 25px;
-    width: 2px;
-    background: rgb(236, 236, 236);
-    height: 100%;
-    z-index: 999;
-}
-
-.Main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 25px;
-    width: 2px;
-    background: rgb(236, 236, 236);
-    height: 100%;
-    z-index: 999;
-}
-
 header nav {
     display: flex;
     justify-content: center;
@@ -94,6 +87,27 @@ header nav {
     width: 100%;
     padding-top: 15px;
 }
+
+.Nav-Container li a {
+    position: relative;
+    padding-bottom: 8px; /* Ajusta según sea necesario */
+}
+
+.Nav-Container li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(84, 67, 67); /* Color del borde inferior */
+    transition: width 0.3s ease; /* Ajusta la duración y el efecto de transición según sea necesario */
+}
+
+.Nav-Container li a:hover::after {
+    width: 100%;
+}
+
 
 .Nav-Container a:nth-child(1) {
     width: 115px;
