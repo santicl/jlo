@@ -315,7 +315,13 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     width: 120px;
     height: 25px;
     background: rgb(71, 71, 71);
+    border:  1px solid rgb(71, 71, 71);
     color: white;
+    transition: all ease-in-out .2s;
+}
+
+.Fixed-Banner__Container a:hover {
+    background: transparent;
 }
 
 
@@ -629,6 +635,12 @@ TEAM JLOPEZ SECTION
     width: 150px;
     height: 30px;
     background: rgb(71, 71, 71);
+    border: 1px solid rgb(71, 71, 71);
+    transition: all ease-in-out .2s;
+}
+
+.Content-Team-Jlo-text__A a:hover {
+    background: transparent;
 }
 
 /*
@@ -730,6 +742,12 @@ JESSICA LOPEZ ARMONIZACION Y ESTETICA SECTION
     width: 150px;
     height: 30px;
     background: rgb(71, 71, 71);
+    border: 1px solid rgb(71, 71, 71);
+    transition: all ease-in-out .2s;
+}
+
+.Content-Jlopez-Arm a:hover {
+    background: transparent;
 }
 
 .Jlopez-Arm::after {
@@ -965,10 +983,15 @@ FORM AGENT SECTION
     width: 220px;
     height: 35px;
     background: rgb(71, 71, 71);
-    border: none;
+    border: 1px solid rgb(71, 71, 71);
     outline: none;
     color: white;
     font-size: 18px;
+    transition: all ease-in-out .2s;
+}
+
+.Form-Content form button:hover {
+    background: transparent;
 }
 
 .Map-Content {
