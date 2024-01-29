@@ -5,7 +5,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
     /* width of the entire scrollbar */
 }
 
@@ -17,7 +17,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #DAC9BC;
     /* color of the scroll thumb */
-    border-radius: 5px;
+    border-radius: 3px;
     /* roundness of the scroll thumb */
     border: 1px solid #DAC9BC;
     /* creates padding around scroll thumb */

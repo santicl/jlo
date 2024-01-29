@@ -47,16 +47,6 @@ HOME HEADER MAIN
     height: 100%;
 }
 
-.Home-Main .Home-Main__Container img {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-
 /*
 SOCIALS LINKS RIGHT
 */
@@ -164,8 +154,10 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     position: relative;
     width: 100%;
     height: 100vh;
-    background: rgb(217, 200, 187);
-    background: linear-gradient(90deg, rgba(217, 200, 187, 1) 0%, rgba(210, 196, 184, 1) 48%, rgba(160, 142, 125, 1) 84%);
+    background-image: url('../img/home/Fondo\ Dra\ Jessica\ .webp');
+    background-position: center;
+    background-size: 100%;
+    object-fit: cover;
     overflow: hidden;
     color: white;
 }
@@ -247,6 +239,30 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     width: 85%;
 }
 
+.ContainerA-Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.ContainerA-Link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: 8px;
+    border: 1px solid rgb(71, 71, 71);
+    background: rgb(71, 71, 71);
+    transition: all ease-in-out .2s;
+}
+
+.ContainerA-Link a:hover {
+    background: transparent;
+    color: white;
+}
+
 .Jlopez-Section::after {
     content: "";
     position: absolute;
@@ -304,6 +320,36 @@ DRA JESSICA LOPEZ SECTION AND BANNER
 
 
 /*
+SLIDE SECTION
+*/
+
+.Home-Main__Container__Images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 400%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Home-Main__Container__Images__Container {
+    display: flex;
+    width: 100%; /* Ajusta este valor según el número de imágenes */
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out; /* Mueve la transición al contenedor */
+}
+
+.Home-Main__Container__Images__Container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*
 SMILE SECTION
 */
 
@@ -354,11 +400,21 @@ SMILE SECTION
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-left: 10px;
+    padding-left: 25px;
 }
 
 .Smile-Content-text h2 {
     font-size: 100px;
+    color: white;
+    z-index: 10;
+}
+
+.Smile-Content-text h3 {
+    color: white;
+}
+
+.Smile-Content-text p {
+    font-size: 20px;
     color: white;
 }
 
@@ -393,6 +449,39 @@ SMILE SECTION
     height: 30px;
     color: white;
     background: rgb(71, 71, 71);
+    border: 1px solid rgb(71, 71, 71);
+    transition: all ease-in-out .2s;
+}
+
+.Smile-Content-text .Smile-Content-text__ContainerA a:hover {
+    color: white;
+    background: transparent;
+}
+
+.Banner-Time-To-Smile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 1;
+}
+
+.Brown-Smile {
+    width: 100%;
+    height: 30%;
+    background: rgb(103, 95, 95);
+}
+
+.Skin-Smile {
+    width: 100%;
+    height: 55%;
+    background: #ded6d0;
+}
+
+.Background-Smile {
+    height: 15%;
+    background: #DAC9BC;
 }
 
 /*
@@ -438,11 +527,16 @@ TEAM JLOPEZ SECTION
 
 .Content-Team-Jlo {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 90%;
     height: 100%;
     gap: 10px;
+}
+
+.Content-Team-Jlo p {
+    font-size: 22px;
+    padding-left: 65px;
 }
 
 .Content-Team-Jlo__Item-img {
@@ -451,6 +545,7 @@ TEAM JLOPEZ SECTION
     align-items: center;
     width: 60%;
     position: relative;
+    z-index: 10;
 }
 
 .Content-Team-Jlo__Item-img img {
@@ -469,14 +564,51 @@ TEAM JLOPEZ SECTION
     display: flex;
     justify-content: start;
     align-items: start;
+    position: absolute;
+    top: calc(100% / 10);
+    right: 0;
     flex-direction: column;
     gap: 15px;
-    width: 40%;
+    width: 50%;
 }
 
-.Content-Team-Jlo-text h2 {
-    font-size: 50px;
+.Title-Container {
+    width: 100%;
+    background: #dcd2cb;
+}
+
+.Title-Smiles-Nice {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.Title-Smiles-Nice h2 {
+    font-size: 60px;
+    color: #887663;
+}
+
+.Title-Container__Left {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    width: 70%;
+    right: 0;
+    background: #887663;
     color: white;
+    overflow: hidden;
+}
+
+.Title-Container__Left h2 {
+    color: white;
+}
+
+.Title-Container__Left span {
+    display: flex;
+    justify-content: start;
 }
 
 .Content-Team-Jlo-text p {
@@ -637,25 +769,31 @@ TECH SECTION
 }
 
 .Tech-Section__Container {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
 .Tech-Section__Container__Text {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
     position: absolute;
-    top: 70px;
-    left: 50px;
+    bottom: 10px;
+    right: 50px;
     color: white;
 }
 
 .Tech-Section__Container__Text h2 {
     font-size: 100px;
-    color: rgb(71, 71, 71);
+    color: white;
 }
 
 .Tech-Section__Container__Text p {
     width: 70%;
     text-align: justify;
-    color: rgb(118, 118, 118);
+    color: white;
 }
 
 .Tech-Section::after {
@@ -714,10 +852,12 @@ CURING LIGHT SECTION
 
 .Curring-light__Container__Text h2 {
     font-size: 75px;
+    color: #595955;
 }
 
 .Curring-light__Container__Text p {
     width: 65%;
+    font-size: 20px;
 }
 
 
@@ -729,40 +869,11 @@ CURING LIGHT SECTION
     width: 60%;
 }
 
-.Curring-light__Container__Images img:nth-child(1) {
+.Curring-light__Container__Images img {
     position: relative;
-    width: 70%;
+    width: 100%;
     z-index: 10;
     left: 0;
-}
-
-.Curring-light__Container__Images img:nth-child(2) {
-    position: absolute;
-    width: 70%;
-    top: 120px;
-    z-index: 5;
-}
-
-.Curring-light::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 25px;
-    width: 2px;
-    background: rgb(71, 71, 71);
-    height: 100%;
-    z-index: 999;
-}
-
-.Curring-light::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 25px;
-    width: 2px;
-    background: rgb(71, 71, 71);
-    height: 100%;
-    z-index: 999;
 }
 
 /*

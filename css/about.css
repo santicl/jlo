@@ -319,10 +319,10 @@ ARMONIZACION OROFACIAL
     justify-content: baseline;
     align-items: center;
     flex-direction: column;
+    background-size: 100%;
     width: 100%;
     height: 100vh;
     position: relative;
-    background: #DAC9BC;
 }
 
 .Arm-Facelift__Container {
@@ -375,8 +375,53 @@ ARMONIZACION OROFACIAL
 }
 
 .Lists-Arm-Facelift ul li {
-    color: rgb(49, 49, 49);
-    list-style: outside;
+    font-size: 22px;
+    color: white;
+    list-style: none;
+}
+
+.Background-Arm-Facelift {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.Banner-three {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.List-Arm-Right-Section {
+    width: 100%;
+    height: 100vh;
+}
+
+.Lists-Arm-Facelift ul li img {
+    width: 15px;
+    height: 15px;
+}
+
+.List-Arm-Right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.List-Arm-Right ul {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.List-Arm-Right ul li {
+    font-size: 22px;
 }
 
 .Arm-Facelift::after {

@@ -1,0 +1,420 @@
+/*
+HEADER SECTION
+*/
+
+.Header-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Header-Section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Header-Section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Header-Section__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Header-Section__Container img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Header-Section__Container__Texts {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+.Header-Section__Container__Texts h1 {
+    font-size: 85px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.Header-Section__Container__Texts p {
+    color: white;
+    font-size: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.Socials-Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 40px;
+    height: 125px;
+    border: 2px solid white;
+    position: absolute;
+    top: calc(100% / 3);
+    right: 25px;
+}
+
+/*
+ARMONIZATION AND ODONTO SECTION
+*/
+
+.Arm-Orofacial {
+    width: 100%;
+    height: auto;
+}
+
+.Odont-Section {
+    width: 100%;
+    height: auto;
+}
+
+/*
+ARMONIZATION AND OROFACIAL AND ODONTOLOGIA SECTION
+*/
+
+.Orofacial-Arm__And__Odont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+}
+
+.Image-Left, .Image-Right {
+    position: absolute;
+    width: 40%;
+    top: calc(100% / 3.5);
+}
+
+.Image-Left {
+    right: -250px;
+}
+
+.Image-Right {
+    left: -250px;
+}
+
+.Orofacial-Arm__And__Odont::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Orofacial-Arm__And__Odont::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Arm-Orofacial, .Odont-Section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+}
+
+.Arm-Orofacial__Container, .Odont-Section__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Arm-Carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin-top: 150px;
+    z-index: 999;
+}
+
+.Arm-Carrousel__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.Arm-Carrousel__Container__Item {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    border: 2px solid white;
+    background: #F9EAE1;
+    width: 400px;
+    height: 370px;
+}
+
+.Odonto-Item {
+    border: 2px solid white;
+    background: #746B62;
+    color: #F9EAE1;
+}
+
+
+.Odonto-Item h3 {
+    color: #F9EAE1;
+}
+
+.Content-Text-And-Btn h3 {
+    color: #4A474F;
+    padding: 0;
+    margin: 0;
+}
+
+.Content-Text-And-Btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 18px;
+    border: none;
+    background: transparent;
+    color: white;
+    gap: 5px;
+    transition: all ease-in-out .2s;
+}
+
+.Content-Text-And-Btn button:hover {
+    width: 190px;
+}
+
+.Content-Text-And-Btn button:hover img {
+
+}
+
+.Content-Text-And-Btn button img {
+    width: 100%;
+    height: auto;
+}
+
+.Content-Image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -180px;
+}
+
+
+.Content-Image img {
+    width: 90%;
+    height: 90%;
+}
+
+.Content-Text-And-Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 300px;
+}
+
+.Arm-Orofacial__Container h2, .Odont-Section__Container h2 {
+    font-size: 75px;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    /* Aplicar un fondo transparente detrás del texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Para compatibilidad con algunos navegadores */
+    color: transparent;
+
+    /* Establecer el color de fondo de la sección para que se muestre detrás del texto */
+    background-image: url('./img/about/Foto 1.webp'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
+    background-position: center; /* Ajustar la posición de la imagen de fondo */
+    padding: 10px;
+    text-fill-color: transparent;
+}
+
+.Odonto_Text h3 {
+    color: #F9EAE1;
+}
+
+.Left-Arrow, .Right-Arrow {
+    width: 5%;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.Left-Arrow:hover, .Right-Arrow:hover {
+    width: 5.5%;
+}
+
+.Left-Arrow {
+    position: absolute;
+    top: calc(100% / 3.5);
+    right: -80px;
+}
+
+.Right-Arrow {
+    position: absolute;
+    top: calc(100% / 3.5);
+    left: -80px;
+}
+
+
+/*
+AGENT SECTION
+*/
+
+.Agenty-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Agenty-Section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Agenty-Section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Agenty-Section__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Agenty-Section__Container img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Agenty-Section__Container__Form__Texts {
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+}
+
+.Agenty-Section__Container__Form__Texts h2 {
+    font-size: 85px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.Agenty-Section__Container__Form__Texts p {
+    color: white;
+    font-size: 18px;
+}
+
+.Agenty-Section__Container__Form__Texts form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Agenty-Section__Container__Form__Texts form input {
+    width: 100%;
+    height: 28px;
+    border: 1px solid white;
+    background: rgb(255, 255, 255, .7);
+}
+
+.Agenty-Section__Container__Form__Texts form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(109, 86, 86);
+    background: rgb(109, 86, 86);
+    color: white;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    transition: all ease-in-out .2s;
+}
+
+.Agenty-Section__Container__Form__Texts form button:hover {
+    background: transparent;
+}
+
+.Line-Middle {
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+

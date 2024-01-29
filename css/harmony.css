@@ -1,0 +1,139 @@
+.Harmony-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Harmony-Section__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Harmony-Section__Container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Harmony-Section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Harmony-Section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Socials-Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 40px;
+    height: 125px;
+    border: 2px solid white;
+    position: absolute;
+    top: calc(100% / 3);
+    right: 25px;
+}
+
+.Line-Middle {
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.Line-Bottom {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: 50px;
+}
+
+.Harmony_Text {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/harmony/Fondo.png');
+    background-size: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.Harmony_Text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Harmony_Text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 2px;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.Harmony_Text__Container__TextsBtn {
+    width: 40%;
+    padding-left: 70px;
+}
+
+.Harmony_Text__Container__TextsBtn p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.Content-Link-A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Content-Link-A a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    color: white;
+    background: rgb(109, 86, 86);
+    border: 1px solid rgb(109, 86, 86);
+    transition: all ease-in-out .2s;
+}
+
+.Content-Link-A a:hover {
+    background: transparent;
+}
+
