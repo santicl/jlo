@@ -193,6 +193,11 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     z-index: 1;
 }
 
+.Icon-Left-Jopez {
+    position: absolute;
+    left: -200px;
+}
+
 .Jlopez__Photo img:nth-child(2) {
     position: absolute;
     top: calc(100% / 15);
@@ -780,7 +785,7 @@ TECH SECTION
 .Tech-Section {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/home/fondo\ 5.webp');
+    background-image: url('../img/about/Oro.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -892,6 +897,68 @@ CURING LIGHT SECTION
     width: 100%;
     z-index: 10;
     left: 0;
+}
+
+.Carousel-Curring-Sliders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Carousel-Curring-Sliders__Container {
+    width: 100%;
+    height: 100%;
+}
+
+.Carousel-Curring-Sliders {
+    overflow: hidden;
+    width: 100%;
+}
+
+.Carousel-Curring-Sliders__Container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.Curring-light {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+.Left-Arrow, .Right-Arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #595955;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.Left-Arrow img, .Right-Arrow img {
+    width: 50%;
+}
+
+.Left-Arrow:hover, .Right-Arrow:hover {
+    background: #777776;
+}
+
+.Left-Arrow {
+    position: absolute;
+    top: calc(100% / 2.5);
+    right: 20px;
+}
+
+.Right-Arrow {
+    position: absolute;
+    top: calc(100% / 2.5);
+    left: 20px;
 }
 
 /*
