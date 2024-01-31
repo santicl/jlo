@@ -161,6 +161,7 @@ ARMONIZATION AND OROFACIAL AND ODONTOLOGIA SECTION
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     flex-direction: column;
     width: 100%;
 }
@@ -210,6 +211,25 @@ ARMONIZATION AND OROFACIAL AND ODONTOLOGIA SECTION
     color: #4A474F;
     padding: 0;
     margin: 0;
+}
+
+.TitleContent {
+    width: 50%;
+}
+
+.Text-Paragraph {
+    width: 90%;
+}
+
+.Tre {
+    width: 80%;
+}
+
+.Arm-Carrousel__Container__Item {
+    transition: transform 0.5s ease-in-out;
+}
+.Arm-Carrousel__Container__Item.hidden {
+    display: none;
 }
 
 .Content-Text-And-Btn button {
@@ -287,9 +307,10 @@ ARMONIZATION AND OROFACIAL AND ODONTOLOGIA SECTION
 }
 
 .Left-Arrow, .Right-Arrow {
+    cursor: pointer;
     width: 5%;
     transition: all ease-in-out .2s;
-    cursor: pointer;
+    z-index: 999;
 }
 
 .Left-Arrow:hover, .Right-Arrow:hover {
@@ -298,14 +319,14 @@ ARMONIZATION AND OROFACIAL AND ODONTOLOGIA SECTION
 
 .Left-Arrow {
     position: absolute;
-    top: calc(100% / 3.5);
-    right: -80px;
+    top: calc(100% / 1.5);
+    right: 0;
 }
 
 .Right-Arrow {
     position: absolute;
-    top: calc(100% / 3.5);
-    left: -80px;
+    top: calc(100% / 1.5);
+    left: 0;
 }
 
 
