@@ -154,10 +154,6 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('../img/home/Fondo\ Dra\ Jessica\ .webp');
-    background-position: center;
-    background-size: 100%;
-    object-fit: cover;
     overflow: hidden;
     color: white;
 }
@@ -166,8 +162,21 @@ DRA JESSICA LOPEZ SECTION AND BANNER
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     width: 100%;
     height: 100%;
+}
+
+.Jlopez-Section__Container .Background-Dra {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Jlopez-Section__Texts {
+    z-index: 999;
 }
 
 .Jlopez-Section__Texts,
@@ -1183,12 +1192,17 @@ FORM AGENT SECTION
         height: 58px;
     }
 
+    .Fixed-Banner__Container {
+        gap: 5px;
+    }
+
     .Fixed-Banner__Container p {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .Fixed-Banner__Container a {
         width: 105px;
+        font-size: 10px;
     }
 
     .Smile-Section__Container {
@@ -1226,12 +1240,13 @@ FORM AGENT SECTION
     }
 
     .Team-Jlo {
-        height: auto;
         padding-top: 50px;
     }
 
     .Content-Team-Jlo {
+        position: relative;
         flex-direction: column;
+        gap: 25px;
     }
 
     .Content-Team-Jlo__Item-img {
@@ -1249,11 +1264,15 @@ FORM AGENT SECTION
     .Content-Team-Jlo-text {
         width: 95%;
         text-align: center;
+        position: relative;
+        top: 10px;
     }
 
     .Content-Team-Jlo-text p {
         text-align: center;
         width: 100%;
+        padding-left: 0;
+        font-size: 16px;
     }
 
     .Content-Team-Jlo-text {
@@ -1261,7 +1280,7 @@ FORM AGENT SECTION
     }
 
     .Content-Team-Jlo-text h2 {
-        font-size: 45px;
+        font-size: 25px;
     }
 
     .Tech-Section__Container__Text h2 {
@@ -1321,7 +1340,7 @@ FORM AGENT SECTION
     }
 
     .Content-Title-Letter h2, .Content-Title-Letter h2:nth-child(2) {
-        font-size: 53px;
+        font-size: 45px;
     }
 
     .Jlopez-Arm__Container__Text {
@@ -1377,5 +1396,58 @@ FORM AGENT SECTION
         width: 70%;
         top: 120px;
         z-index: 5;
+    }
+    
+    .Jlopez-Section__Texts__Title {
+        padding-left: 15px;
+    }
+
+    .Jlopez-Section__Texts__Title h2 {
+        font-size: 33px;
+    }
+
+    .Jlopez-Section__Texts {
+        padding-bottom: 192px;
+    }
+
+    .Banner-Time-To-Smile {
+        width: 27px;
+    }
+
+    .Smile-Content-text h2 {
+        text-align: center;
+    }
+
+    .Jlopez-Arm__Container__Text p {
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Tech-Section__Container__Text h2 {
+        font-size: 63px;
+    }
+
+    .Tech-Section__Container__Text {
+        bottom: calc(100% / 2.5);
+    }
+
+    .Tech-Section__Container__Text p {
+        width: 85%;
+    }
+
+    .Curring-light__Container__Text h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .Curring-light__Container__Text p {
+        width: 65%;
+        font-size: 15px;
+    }
+
+    .Left-Arrow, .Right-Arrow {
+        width: 40px;
+        height: 40px;
     }
 }

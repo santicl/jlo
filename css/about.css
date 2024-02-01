@@ -912,5 +912,9 @@ CONTACT FORM SECTION
         position: absolute;
         right: 0;
     }
+
+    .Arm-Facelift {
+        height: 100vh;
+    }
 }
 
